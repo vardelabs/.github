@@ -36,11 +36,20 @@ Built for professional services and financial firms with **2–200 employees**, 
 
 ## Who We Work With
 
-| | |
-|---|---|
-| 🏦 **Financial Services** | Client onboarding bottlenecks, contract preparation that eats hours, compliance tracking across disconnected tools. We automate the repeatable work so the team focuses on advisory. |
-| 💼 **Professional Services** | Proposal generation, knowledge retrieval, project delivery tracking. Every hour spent on admin is an hour not spent on client work. We fix that math. |
-| ⚙️ **Operations-Heavy SMBs** | Scheduling chaos, system fragmentation, manual handoffs between tools that don't talk to each other. We connect them and automate the work in between. |
+<table>
+<tr>
+<td width="220">🏦 <strong>Financial Services</strong></td>
+<td>Client onboarding bottlenecks, contract preparation that eats hours, compliance tracking across disconnected tools. We automate the repeatable work so the team focuses on advisory.</td>
+</tr>
+<tr>
+<td>💼 <strong>Professional Services</strong></td>
+<td>Proposal generation, knowledge retrieval, project delivery tracking. Every hour spent on admin is an hour not spent on client work. We fix that math.</td>
+</tr>
+<tr>
+<td>⚙️ <strong>Operations-Heavy SMBs</strong></td>
+<td>Scheduling chaos, system fragmentation, manual handoffs between tools that don't talk to each other. We connect them and automate the work in between.</td>
+</tr>
+</table>
 
 ## What Clients Say
 
