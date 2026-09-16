@@ -1,6 +1,9 @@
 <div align="center">
 
-<img src="assets/banner.png" alt="Varde Labs — AI tools won't fix broken operations." width="100%" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/logo-symbol-light.svg" />
+  <img src="assets/logo-symbol-dark.svg" alt="Varde Labs" width="72" />
+</picture>
 
 ### We get teams from *experimenting* with AI to *actually operating* with it.
 Real adoption across your workflows in 20 days, not 6 months.
