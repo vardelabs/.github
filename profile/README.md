@@ -1,8 +1,8 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/logo-symbol-light.svg" />
-  <img src="assets/logo-symbol-dark.svg" alt="Varde Labs" width="72" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/logo-combomark-light.svg" />
+  <img src="assets/logo-combomark-dark.svg" alt="Varde Labs" width="200" />
 </picture>
 
 ### We get teams from *experimenting* with AI to *actually operating* with it.
