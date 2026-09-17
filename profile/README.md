@@ -8,11 +8,11 @@
 ### We get teams from *experimenting* with AI to *actually operating* with it.
 Real adoption across your workflows in 20 days, not 6 months.
 
-[![Website](assets/badge-website.svg)](https://vardelabs.com)
-[![Email](assets/badge-email.svg)](mailto:hello@vardelabs.com)
-[![X](assets/badge-x.svg)](https://x.com/vardelabs)
+[![Website](assets/badge-website-c.svg)](https://vardelabs.com)
+[![Email](assets/badge-email-c.svg)](mailto:hello@vardelabs.com)
+[![X](assets/badge-x-c.svg)](https://x.com/vardelabs)
 
-[![Book a Free Intro Call](assets/badge-book.svg)](https://book.vardelabs.com)
+[![Book a Free Intro Call](assets/badge-book-c.svg)](https://book.vardelabs.com)
 
 </div>
 
@@ -73,7 +73,7 @@ Built for professional services and financial firms with **2–200 employees**, 
 
 ### Team
 
-[![Kai — GitHub](assets/badge-kai.svg)](https://github.com/desilvakai) [![Bryan — GitHub](assets/badge-bryan.svg)](https://github.com/bdesilva4) [![North — GitHub](assets/badge-north.svg)](https://github.com/north-vardelabs) [![Corvus — GitHub](assets/badge-corvus.svg)](https://github.com/corvus-vardelabs)
+[![Kai — GitHub](assets/badge-kai-c.svg)](https://github.com/desilvakai) [![Bryan — GitHub](assets/badge-bryan-c.svg)](https://github.com/bdesilva4) [![North — GitHub](assets/badge-north-c.svg)](https://github.com/north-vardelabs) [![Corvus — GitHub](assets/badge-corvus-c.svg)](https://github.com/corvus-vardelabs)
 
 <sub>© 2026 Varde Labs</sub>
 
