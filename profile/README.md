@@ -8,7 +8,7 @@
 ### We get teams from *experimenting* with AI to *actually operating* with it.
 Real adoption across your workflows in 20 days, not 6 months.
 
-[![Website](assets/badge-website-c.svg)](https://vardelabs.com)
+[![Website](assets/badge-website-c2.svg)](https://vardelabs.com)
 [![Email](assets/badge-email-c.svg)](mailto:hello@vardelabs.com)
 [![X](assets/badge-x-c.svg)](https://x.com/vardelabs)
 
