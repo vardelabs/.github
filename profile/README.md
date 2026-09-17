@@ -25,13 +25,13 @@ Varde Labs is an **AI adoption agency**. We don't sell off-the-shelf AI tools an
 Built for professional services and financial firms with **2–200 employees**, running operations across disconnected systems, without the internal AI expertise to fix them.
 
 <div align="center">
-<img src="assets/stats-v2.png" alt="300+ workflows automated · 180+ staff hours recovered annually · 85% faster contract processing · 3x client capacity increase" width="100%" />
+<img src="assets/stats-v3.png" alt="300+ workflows automated · 180+ staff hours recovered annually · 85% faster contract processing · 3x client capacity increase" width="100%" />
 </div>
 
 ## The Varde Labs Method
 
 <div align="center">
-<img src="assets/method-v2.png" alt="The Varde Labs Method: Identify, Redesign, Deploy, Adopt" width="100%" />
+<img src="assets/method-v3.png" alt="The Varde Labs Method: Identify, Redesign, Deploy, Adopt" width="100%" />
 </div>
 
 ## Who We Work With
@@ -69,7 +69,7 @@ Built for professional services and financial firms with **2–200 employees**, 
 <br />
 
 <div align="center">
-<img src="assets/footer-v2.png" alt="15 minutes. Free. Walk away with clarity. Designed by Varde Labs, powered by North." width="100%" />
+<img src="assets/footer-v3.png" alt="15 minutes. Free. Walk away with clarity. Designed by Varde Labs, powered by North." width="100%" />
 
 ### Team
 
