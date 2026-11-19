@@ -13,14 +13,14 @@ import re
 import subprocess
 import sys
 
-PUBLIC_NAME = re.compile(r"\b(?:VITE|NEXT_PUBLIC|PUBLIC|REACT_APP|EXPO_PUBLIC)_[A-Z0-9_]+\b")
+PUBLIC_NAME = re.compile(r"\b(?:VITE|NEXT_PUBLIC|PUBLIC|REACT_APP|EXPO_PUBLIC)_[A-Za-z0-9_]+\b")
 SECRET_WORDS = {"SECRET", "TOKEN", "PASSWORD", "PASSWD", "PRIVATE"}
 # Docs often name the very var they warn against; only code and config ship.
 PROSE_SUFFIXES = (".md", ".mdx", ".rst", ".txt")
 
 
 def is_secret_name(name: str) -> bool:
-    segments = name.split("_")
+    segments = name.upper().split("_")
     return bool(SECRET_WORDS.intersection(segments)) or segments[-2:] == ["API", "KEY"]
 
 

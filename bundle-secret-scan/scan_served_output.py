@@ -22,11 +22,15 @@ MEDIA_SUFFIXES = {
 }
 
 
+def fail_on_walk_error(error: OSError) -> None:
+    raise error
+
+
 def served_files(root: Path) -> list[Path]:
     # A host serves through a symlinked directory, so the walk follows them;
     # the real-path set stops a link loop from walking forever.
     files, visited = [], set()
-    for directory, subdirs, names in os.walk(root, followlinks=True):
+    for directory, subdirs, names in os.walk(root, onerror=fail_on_walk_error, followlinks=True):
         real = os.path.realpath(directory)
         if real in visited:
             subdirs.clear()
