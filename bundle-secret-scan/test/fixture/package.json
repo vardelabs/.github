@@ -1,0 +1,7 @@
+{
+  "name": "bundle-secret-scan-fixture",
+  "private": true,
+  "type": "module",
+  "scripts": { "build": "vite build" },
+  "devDependencies": { "vite": "6.3.5" }
+}

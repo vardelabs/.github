@@ -1,0 +1,47 @@
+name: Bundle Secret Scan
+description: Fail when client-served output holds a provider secret, or a secret-named variable sits under a public env prefix.
+
+inputs:
+  path:
+    description: The directory the site serves, after the build. A static repo passes its served directory as committed.
+    required: true
+  source-path:
+    description: The repo checkout whose tracked files are checked for secret-named public env vars.
+    default: .
+  allow-names:
+    description: Publishable names under a public prefix that the name check lets through, comma- or newline-separated.
+    default: ""
+
+runs:
+  using: composite
+  steps:
+    - name: Install gitleaks
+      shell: bash
+      env:
+        GITLEAKS_VERSION: 8.30.1
+        GITLEAKS_SHA256: 551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb
+      run: |
+        set -euo pipefail
+        if [ "$RUNNER_OS" != Linux ] || [ "$RUNNER_ARCH" != X64 ]; then
+          echo "::error::bundle-secret-scan runs on a Linux x64 runner"
+          exit 1
+        fi
+        tarball="$RUNNER_TEMP/gitleaks.tar.gz"
+        curl -fsSL -o "$tarball" "https://github.com/gitleaks/gitleaks/releases/download/v${GITLEAKS_VERSION}/gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz"
+        echo "$GITLEAKS_SHA256  $tarball" | sha256sum -c -
+        mkdir -p "$RUNNER_TEMP/gitleaks"
+        tar -xzf "$tarball" -C "$RUNNER_TEMP/gitleaks" gitleaks
+        echo "$RUNNER_TEMP/gitleaks" >> "$GITHUB_PATH"
+
+    - name: Check public env var names
+      shell: bash
+      env:
+        SOURCE_PATH: ${{ inputs.source-path }}
+        ALLOW_NAMES: ${{ inputs.allow-names }}
+      run: python3 "$GITHUB_ACTION_PATH/check_public_env_names.py" --source "$SOURCE_PATH" --allow "$ALLOW_NAMES"
+
+    - name: Scan client-served output
+      shell: bash
+      env:
+        SCAN_PATH: ${{ inputs.path }}
+      run: python3 "$GITHUB_ACTION_PATH/scan_served_output.py" "$SCAN_PATH" --config "$GITHUB_ACTION_PATH/bundle-secrets.toml"
